@@ -8,3 +8,7 @@ salary = 12_000_000_470
 group_discount = 10_00_000
 print(salary)
 print(group_discount)
+
+# multiple variable assignment
+x, y, z = 0, 0, 0
+print(y)
