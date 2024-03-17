@@ -25,12 +25,13 @@ print(boys[-1].title()) """
 boys.sort() # sorts the elements alphabetically
 boys.append("element to append") # appends new elemnt at the end of list
 boys.copy() # copy the list to another variable
-boys.insert(index, element_to_append)
+boys.insert(index, element_to_append) # this is different from boys[0] = "segun" becos it doesn't replace
 boys.remove(element_to_remove) # removes element from list
 boys.clear() # does not take arg. deletes everything in the list
 boys.count("element to count") # used with print, this will return times the element appears
 boys.index("element to search") # used with print, this returns the element's index
-boys.pop(index) # deletes the element at the index """
+boys.pop(index) # deletes the element at the index
+len(boys) # returns the number of elements in the list"""
 
 # new_boys = boys.copy()
 #boys.append("gbenga")
