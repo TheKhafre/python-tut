@@ -6,5 +6,7 @@ person_1 = {
 }
 
 for key, value in person_1.items():
-    print(f"\n{key}:")
-    print(f"\t{value}")
+    if value == 21:
+        print("good! now, let's talk business")
+"""     print(f"\n{key}:")
+    print(f"\t{value}") """
