@@ -3,7 +3,11 @@ alien_0 = {
     "y_pos": 25, 
     "speed": "medium"
 }
-print(f"Original position: {alien_0['x_pos']}")
+
+# the .get takes 2 arguments: 
+# the key to get its value, and
+# the statement to return if that key does not exist
+print(f"Original position: {alien_0.get('x_pos', 'x-pos doesnt exist')}")
 
 # Move the alien to the right.
 # Determine how far to move the alien based on its current speed.
