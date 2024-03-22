@@ -15,5 +15,13 @@ class Restaurant:
 
 my_shop = Restaurant("Fancy foods", "spaghetti")
 my_shop.describe_restaurant()
+print()
+
+ife_shop = Restaurant("Jeun", "oriental rice")
+ife_shop.describe_restaurant()
+print()
+
+lag_shop = Restaurant("Tall Fish", "burger and Sharwama")
+lag_shop.describe_restaurant()
 
 print(f"\n{my_shop.restaurant_name}")
