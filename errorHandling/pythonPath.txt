@@ -1,0 +1,4 @@
+Here some things you've learnt so far:
+    In python, you can create a dictionary and list to save multiple things
+    In python, you can read and create a text file directly with code
+    In python you can perform a lot of tricks with cods that other people wrote
