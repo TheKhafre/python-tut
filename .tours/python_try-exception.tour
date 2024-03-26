@@ -1,0 +1,26 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "python_try-exception",
+  "steps": [
+    {
+      "file": "errorHandling/tryExcept.py",
+      "description": "the python program asks the useer for two numbers and atempts to divide the first by the second.",
+      "line": 1
+    },
+    {
+      "file": "errorHandling/tryExcept.py",
+      "description": "unless it hits a control statement such as break, continue or pass, the loop will always be true. we have run the operation in a loop to allow users perform the operation multiple times. I.e after the program gives the answer, it will ask the user to enter values to divide again and unless it is q, it will stll try to give an answer.",
+      "line": 4
+    },
+    {
+      "file": "errorHandling/tryExcept.py",
+      "description": "first thing first, a try block has 3 parts to it; the try-except-else part. the try block is the block wherre what we want to try goes in. the except block attempts to catch the error in our code (if one arises), but in the case where there is no error from the try block, the code executes the else block.",
+      "line": 12
+    },
+    {
+      "file": "errorHandling/tryExcept.py",
+      "description": "the \"as e\" in the exception is to save the error that python returns. this is because at times, we might want to also print that specific error to a technical user.",
+      "line": 15
+    }
+  ]
+}
