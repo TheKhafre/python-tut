@@ -1,0 +1,16 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "test-tour",
+  "steps": [
+    {
+      "file": "dict_project.py",
+      "description": "This dictionary creates a person variable with some informations about the person.",
+      "line": 1
+    },
+    {
+      "file": "dict_project.py",
+      "description": "Here we print both the key and value pair in the dictional using the dictionary_name.items() function. However, if we want to print only the key, then it will be .keys, if we want the values (as we've done later) it will be .values.",
+      "line": 8
+    }
+  ]
+}
