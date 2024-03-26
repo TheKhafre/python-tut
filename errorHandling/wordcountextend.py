@@ -10,7 +10,7 @@ def wordCount(filename):
 
         print(f"there are {counted}-words in {filename[:-4]}")
 
-books = ["pythonpath.txt", "my_text.txt"]
+books = ["pythonpath.txt", "bible.txt", "my_text.txt"]
 
 for book in books:
     wordCount(book)
