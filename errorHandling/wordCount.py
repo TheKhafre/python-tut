@@ -1,4 +1,4 @@
-path = 'errorHandling/pythonpath.txt'
+path = 'pythonpath.txt'
 
 with open(path) as f:
     toCount = f.read()
