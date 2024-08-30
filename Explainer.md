@@ -242,3 +242,54 @@ on your terminal, start with initializing the python terminal by typing `python`
   ```
 
 ## Lists in Python
+A list is a collection of items in a particular order. We can add anything in a list i.e the elements in a list don't have to be of the same data types. To represent a list in python, we place the elements in a square bracket [] and separate each of them with a comma. 
+
+Further, because the content of a list is always more than one, it is therefore a good practice to make the name of our list in plural form. e.g:
+```python
+entry = ["Taiwo", "Bose", 5, "Pelemo", True, {Nigeria : Naira}]
+```
+
+To access the elements on the list is possible in 3 differnt ways:
+1. We can simply print all the elements of the string using the print statement e.g to print the example above we say:
+```python
+print(entry)
+```
+
+for this, we get the result `["Taiwo", "Bose", 5, "Pelemo", True, {Nigeria : Naira}]`
+
+2. The other approach is to use the element index. here is the thing about list in python, the element of a list in python are ordered i.e the occupy a position and this position start from 0. This mean that the first element in the list occupy position 0, the second occupy position 1, the third occupies position 2 and so on. Therefore, to access any element from the list we can just use the knowledge of their position in the list to draw up the element. An easy way to get the index is to just say n-1 where n is the position of the element which mean the first element will be 1-1 = 0.
+
+For example, suppose we want to access Pelemo from the example above, we can see that this elemen
+t is the 4th in the list which mean it has an index of 3. To access it we simply write the name of the list followed by the index of the item wrapped in a square bracket: 
+```python
+print(entry[3])
+```
+
+this will give `Pelemo` as a result. This result is neat and clean, and above all can be passed into a string method. For example, suppose we have a list of names, we can print a result in title case e.g 
+```python
+names = ["beatrice", "samuel", "joseph", "daniel"]
+print(names[0].title)
+```
+
+this will return the first element in the list as a title case object returning `Beatrice`. At this point, it is also worthy to note that python also support negative indexing which starts counting from the back. However, unlike the regular indexing which begins the count from zero, negative index starts from 1. Therefore, to acces the last element in the list we use -1 as our index.
+
+We can can do anything with a list object and that includes that we can use the objects in a string or anything else. Here is an example of a list element in a string.
+```python
+print(f"my best friend's name is {names[1].title}. He's 23years old")
+```
+The output will be `my best friend's name is Samuel. He's 23years old`
+
+### Handling Dynamic lists
+For the most part of using a list, you will want to be able to manipulate your list i.e add, remove, update the elements. This kind of handling of a list is known as a dynamic list. Games are one of the special places where list manipulation are most important. For exmaple in a game that increase the number of obstacles as the time progress and reduce them when they are hit will be using a list to add and remove this obstacles. So, let's learn about modifying the list.
+
+**Updating an element**
+To change an element to soemthing else in a list is as straightforward as simply accessing the element by the index and assigning it the new value. here is an example, suppose we have a list with things to buy at the market and along the way we decided we want to change soap to diswasher in the list, we simply say:
+```python
+shopping_cart = ["Bread", "Soap", "Eggs", "Milk"]
+print(shopping_cart)
+
+shopping_cart[1] = "dishwasher"
+print(shopping_cart)
+```
+
+in the code, the first time we print the shopping_cart, it will give us `["Bread", "Soap", "Eggs", "Milk"]`, but because we change the element at the index 1 from `soap` to `dishwasher`, now when we print the shopping_cart again it will give us `["Bread", "dishwasher", "Eggs", "Milk"]`
