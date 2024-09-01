@@ -12,4 +12,4 @@ while True:
         exit()
 
     names.append(response)
-    print(names)
+    print(f"you just added {names[-1]} to the list")
