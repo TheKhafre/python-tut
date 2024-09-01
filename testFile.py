@@ -8,9 +8,8 @@ while True:
     print("to cancel, press q")
     response = input("please enter your name: ")
 
-    if(response == "q"):
-        exit
-    else:
-        names.append = response
+    if(response == 'q'):
+        exit()
 
-print(names)
+    names.append(response)
+    print(names)
