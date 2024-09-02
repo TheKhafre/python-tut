@@ -13,3 +13,5 @@ while True:
 
     names.append(response)
     print(f"you just added {names[-1]} to the list")
+    names.sort()
+    print(names)
