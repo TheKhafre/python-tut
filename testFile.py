@@ -3,15 +3,22 @@ for i in entry:
     print(i.title(), end=" | ") """
 
 names = []
+print("to cancel, press q")
 
 while True:
-    print("to cancel, press q")
     response = input("please enter your name: ")
 
     if(response == 'q'):
         exit()
 
     names.append(response)
-    print(f"you just added {names[-1]} to the list")
-    names.sort()
-    print(names)
+    
+    if(len(names) > 4):
+       # names.sort()
+        print(f"The list contains")
+        for i in names:
+            print(i, end=" | ")
+        print("\n")
+    else:
+        print(f"you just added {names[-1]} to the list")
+        
