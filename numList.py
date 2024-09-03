@@ -1,5 +1,5 @@
-""" names = ["tobi", "tayo", "segun", "daniel"]
 # using range to print the list item in index 2 and 4
+""" names = ["tobi", "tayo", "segun", "daniel"]
 for i in range(2, 4):
     print(names[i]) """
 
