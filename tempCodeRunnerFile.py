@@ -1,12 +1,15 @@
-pizza = {
-    'crust' : 'thick',
-    'toppings' : ['mushroom', 'extra cheese']
-}
+unconfirmed_users = ['femi', 'daniel', 'feyi', 'tobi']
+confirmed_users = []
 
-print(f'you ordered a {pizza['crust']}-crust pizza '
-      'with the following toppings:')
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop()
+    print(f'verifying user: {current_user.title()}')
+    
+    if current_user == 'daniel':
+        continue
+    else:
+        confirmed_users.append(current_user)
 
-for topping in pizza['toppings']:
-    print(f'\t - {topping}')
-
-print('\n')
+print('\nthe confirmed users are: ')
+for users in confirmed_users:
+    print(f'\t - {users.title()}')
