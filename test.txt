@@ -1,2 +1,4 @@
 added something here to test branching
 added a new line
+
+added a new line from branch to see merge conflict
