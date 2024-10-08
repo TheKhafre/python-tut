@@ -8,7 +8,12 @@
     in this example, we opened as 'opened_file' and save in the variable 'content'.
 """
 
-with open('.\\fileHandling\\testfile.txt') as opened_file:
+file_path = '.\\fileHandling\\testfile.txt'
+
+with open(file_path) as opened_file:
     content = opened_file.read()
+
+""" with open('.\\fileHandling\\testfile.txt') as opened_file:
+    content = opened_file.read() """
 
 print(content)
