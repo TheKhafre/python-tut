@@ -7,7 +7,7 @@ def hello_user():
         with open(filename) as f:
             username = json.load(f)
     except FileNotFoundError:
-        username = input("what is your name: ").strip()
+        username = input("what is your name: ").strip().lower()
 
         with open(filename, "w") as f:
             json.dump(username, f)
