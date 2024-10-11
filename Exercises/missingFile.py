@@ -6,8 +6,8 @@ def word_count(filename):
         with open(filename) as file:
             contents = file.read()
     except FileNotFoundError as e:
-        print(f"Sorry, the file {filename} does not exist.")
-        print(f"Error: {e}")
+        with open('missing.txt', 'a') as file:
+            file.write(f"{filename} does not exist.\n")
     else:
         words = contents.split()
         num_words = len(words)
